@@ -1,14 +1,14 @@
 function add(a, b) {
-  return a + b;
+  return Math.round((Number(a) + Number(b) + Number.EPSILON) * 100) / 100;
 }
 function subtract(a, b) {
-  return a - b;
+  return Math.round((Number(a) - Number(b) + Number.EPSILON) * 100) / 100;
 }
 function multiply(a, b) {
-  return a * b;
+  return Math.round((Number(a) * Number(b) + Number.EPSILON) * 100) / 100;
 }
 function divide(a, b) {
-  return a / b;
+  return Math.round((Number(a) / Number(b) + Number.EPSILON) * 100) / 100;
 }
 
 function operate(operator, a, b) {
